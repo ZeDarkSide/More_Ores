@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "moreores",
+  "version": "${version}",
+
+  "name": "More Ores",
+  "description": "This is a mob the adds a ton of new ores to the game for you to play around with!",
+  "authors": [
+    "DarkSideDev"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.chance.moreores.MoreOres"
+    ],
+    "client": [
+      "net.chance.moreores.MoreOresClient"
+    ]
+  },
+  "mixins": [
+    "moreores.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
